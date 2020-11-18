@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "yarn serve dist",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "echo \"should copy other project files to dist directory\"",
+    "deploy": "node src/index.js"
   },
   "repository": {
     "type": "git",
