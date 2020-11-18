@@ -2,10 +2,11 @@
   "name": "mariusz-cz.github.io",
   "version": "0.0.1",
   "description": "Strona domowa Mariusza Czapiewskiego",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn serve dist"
+    "start": "yarn serve dist",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,7 @@
   "dependencies": {
     "serve": "^11.3.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
